@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../assets/css/lesson1.css">
 </head>
 <body>
-    
+
 </body>
 </html>
 
@@ -26,4 +26,3 @@
     } 
 echo '</div></div>';
 ?>
-

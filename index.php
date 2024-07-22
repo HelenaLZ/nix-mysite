@@ -11,7 +11,7 @@
     <nav>
         
             <a href=/lessons/lesson1.php>Lesson 1</a>
-            <a href=/lessons/lesson2.php>Lesson 2</a>         
+            <a href=/lessons/lesson2.php>Lesson 2</a>        
     </nav>
 </header>
     <section id="first">
