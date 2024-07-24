@@ -14,7 +14,7 @@
 
 <?php
 
-function add_color($number){
+function addColor($number){
     $color = "#000";
     switch ($number){
         case 0: 
@@ -71,17 +71,17 @@ function add_color($number){
 }
 
 
-function add_tags_and_style($number){
-    $number_to_string=(string)$number;
-    if (mb_strlen($number_to_string)==1){
-        $color=add_color($number);
+function addTagsAndStyle($number){
+    $numberToString=(string)$number;
+    if (mb_strlen($numberToString)==1){
+        $color=addColor($number);
         $tag="<span style=\"color: $color;\">$number</span>";
         return $tag;
     } else {
         $tag="";
-        for ($i=0; $i<mb_strlen($number_to_string); $i++) {
-            $color=add_color($number_to_string[$i]);
-            $tag=$tag."<span style=\"color: $color;\">$number_to_string[$i]</span>";
+        for ($i=0; $i<mb_strlen($numberToString); $i++) {
+            $color=addColor($numberToString[$i]);
+            $tag=$tag."<span style=\"color: $color;\">$numberToString[$i]</span>";
         }
         return $tag;
     }
@@ -93,7 +93,7 @@ echo '<div class="container"><div class="flexcontainer">';
     for ($i=1; $i<11; $i++){
         echo '<div class="flexitem">';
             for ($j=1; $j<11; $j++) {
-                echo add_tags_and_style($i)." x ".add_tags_and_style($j)." = ". add_tags_and_style($i*$j)."<br>";
+                echo addTagsAndStyle($i)." x ".addTagsAndStyle($j)." = ".addTagsAndStyle($i*$j)."<br>";
             }
         echo '</div>';
     } 

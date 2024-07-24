@@ -14,9 +14,7 @@
 
 <?php
 
-
-
- echo '<div="container"><div class="flexcontainer">';
+echo '<div="container"><div class="flexcontainer">';
     for ($i=1; $i<11; $i++){
         echo '<div class="flexitem">';
         for ($j=1; $j<11; $j++) {
